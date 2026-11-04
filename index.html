@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2ec">
+  <meta name="description" content="ATELIER — conceito de escritório de arquitetura e interiores. Projetos que unem forma, matéria e sensibilidade.">
+  <title>ATELIER | Arquitetura & Interiores</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="ATELIER, início">
+        ATELIER<span class="logo-dot">.</span>
+        <small>ARQUITETURA & INTERIORES</small>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#sobre" class="nav-link">O estúdio</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#processo" class="nav-link">Processo</a>
+        <a href="#contato" class="nav-contact">Contato</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- APRESENTAÇÃO -->
+    <section class="hero" id="inicio">
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=85"
+          alt="Ambiente residencial contemporâneo com mobiliário sofisticado e iluminação natural"
+          fetchpriority="high">
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-topline">
+          <span class="eyebrow light">ESTÚDIO DE ARQUITETURA CONTEMPORÂNEA</span>
+          <span class="hero-index">01 / 04</span>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="hero-heading">
+            <p class="hero-intro">ESPAÇOS QUE CONTAM HISTÓRIAS</p>
+            <h1>O essencial<br>é <em>extraordinário.</em></h1>
+            <p class="hero-description">
+              Arquitetura que encontra equilíbrio entre estética,
+              funcionalidade e a maneira única de viver.
+            </p>
+            <a href="#projetos" class="button button-light">Explorar projetos</a>
+          </div>
+
+          <div class="hero-side">
+            <span>FORMA</span>
+            <span>MATÉRIA</span>
+            <span>ESSÊNCIA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>DESCUBRA O ATELIER</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- INTRODUÇÃO -->
+    <section class="intro section-padding" id="sobre">
+      <div class="container intro-grid">
+        <div class="intro-label reveal">
+          <span class="eyebrow">01 — NOSSA FILOSOFIA</span>
+          <span class="section-line"></span>
+        </div>
+
+        <div class="intro-main reveal">
+          <h2 class="display-title">
+            Não desenhamos apenas espaços.
+            <em>Desenhamos formas de viver.</em>
+          </h2>
+
+          <div class="intro-bottom">
+            <p>
+              Acreditamos em uma arquitetura que ultrapassa tendências.
+              Cada detalhe, textura e proporção nasce de uma intenção:
+              transformar ambientes em experiências significativas.
+            </p>
+            <a href="#processo" class="text-link">Conheça nossa abordagem</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container intro-image-wrap reveal">
+        <div class="intro-image">
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85"
+            alt="Interior minimalista com tons naturais e materiais sofisticados"
+            loading="lazy">
+        </div>
+        <div class="image-caption">
+          <span>ATELIER / ESTUDO DE MATERIALIDADE</span>
+          <span>ARQUITETURA EM SUA FORMA MAIS ESSENCIAL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projects section-padding" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">02 — PORTFÓLIO CONCEITUAL</span>
+            <h2 class="display-title">Projetos <em>selecionados.</em></h2>
+          </div>
+          <p>
+            Uma curadoria de ambientes que exploram
+            luz, composição, materiais e novas possibilidades.
+          </p>
+        </div>
+
+        <div class="project-filters" role="group" aria-label="Filtrar projetos">
+          <button class="filter-btn active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" data-filter="residencial" aria-pressed="false">Residencial</button>
+          <button class="filter-btn" type="button" data-filter="interiores" aria-pressed="false">Interiores</button>
+          <button class="filter-btn" type="button" data-filter="comercial" aria-pressed="false">Comercial</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card project-large reveal" data-category="residencial">
+            <button class="project-open" type="button" data-project="casa-aurora" aria-label="Explorar conceito Casa Aurora">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1500&q=85"
+                  alt="Sala de estar contemporânea com materiais naturais"
+                  loading="lazy">
+                <span class="project-number">01</span>
+                <span class="project-action">VER PROJETO</span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Casa Aurora</h3>
+                  <span>Residencial / Estudo conceitual</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" data-category="interiores">
+            <button class="project-open" type="button" data-project="essencia" aria-label="Explorar conceito Essência">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1300&q=85"
+                  alt="Ambiente de interiores com design contemporâneo"
+                  loading="lazy">
+                <span class="project-number">02</span>
+                <span class="project-action">VER PROJETO</span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Essência</h3>
+                  <span>Interiores / Estudo conceitual</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card reveal" data-category="comercial">
+            <button class="project-open" type="button" data-project="studio-forma" aria-label="Explorar conceito Studio Forma">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1300&q=85"
+                  alt="Espaço contemporâneo com composição minimalista"
+                  loading="lazy">
+                <span class="project-number">03</span>
+                <span class="project-action">VER PROJETO</span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Studio Forma</h3>
+                  <span>Comercial / Estudo conceitual</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+            </button>
+          </article>
+
+          <article class="project-card project-large reveal" data-category="residencial">
+            <button class="project-open" type="button" data-project="refugio" aria-label="Explorar conceito Refúgio">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1500&q=85"
+                  alt="Residência de linguagem contemporânea e atmosfera acolhedora"
+                  loading="lazy">
+                <span class="project-number">04</span>
+                <span class="project-action">VER PROJETO</span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Refúgio</h3>
+                  <span>Residencial / Estudo conceitual</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+            </button>
+          </article>
+
+        </div>
+
+        <p class="project-disclaimer">
+          Projetos e nomes fictícios para demonstração de interface.
+          As fotografias são referências visuais independentes.
+        </p>
+      </div>
+    </section>
+
+    <!-- DESTAQUE EDITORIAL -->
+    <section class="statement">
+      <div class="statement-image">
+        <img
+          src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=2200&q=85"
+          alt="Ambiente de arquitetura contemporânea com composição elegante"
+          loading="lazy">
+      </div>
+      <div class="statement-overlay"></div>
+      <div class="container statement-content reveal">
+        <span class="eyebrow light">O VALOR DOS DETALHES</span>
+        <h2>Menos ruído.<br><em>Mais significado.</em></h2>
+        <p>
+          O verdadeiro luxo está na harmonia entre
+          o que vemos, sentimos e vivemos.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services section-padding" id="servicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">03 — ESPECIALIDADES</span>
+            <h2 class="display-title">O que <em>imaginamos.</em></h2>
+          </div>
+          <p>
+            Soluções pensadas para integrar estética,
+            propósito e funcionalidade.
+          </p>
+        </div>
+
+        <div class="services-list">
+          <article class="service-item reveal">
+            <span class="service-number">01</span>
+            <div class="service-main">
+              <h3>Arquitetura residencial</h3>
+              <p>Conceitos para casas e espaços de morar que valorizam conforto, identidade e proporção.</p>
+            </div>
+            <span class="service-category">RESIDENCIAL</span>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-number">02</span>
+            <div class="service-main">
+              <h3>Design de interiores</h3>
+              <p>Composições que equilibram materiais, iluminação, mobiliário e sensações.</p>
+            </div>
+            <span class="service-category">INTERIORES</span>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-number">03</span>
+            <div class="service-main">
+              <h3>Espaços comerciais</h3>
+              <p>Ambientes que traduzem o posicionamento e a personalidade de uma marca.</p>
+            </div>
+            <span class="service-category">COMERCIAL</span>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-number">04</span>
+            <div class="service-main">
+              <h3>Consultoria criativa</h3>
+              <p>Orientações conceituais para transformar ideias em propostas visuais consistentes.</p>
+            </div>
+            <span class="service-category">CONSULTORIA</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="process section-padding" id="processo">
+      <div class="container process-grid">
+        <div class="process-heading reveal">
+          <span class="eyebrow">04 — METODOLOGIA CONCEITUAL</span>
+          <h2 class="display-title">Cada detalhe<br>tem uma <em>razão.</em></h2>
+          <p>
+            Um processo criativo que começa na escuta
+            e ganha forma por meio da pesquisa e do desenho.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <span>01</span>
+            <div>
+              <h3>Descoberta</h3>
+              <p>Entender necessidades, referências, hábitos e expectativas.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <span>02</span>
+            <div>
+              <h3>Conceito</h3>
+              <p>Definir a direção criativa, os materiais e a linguagem visual.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <span>03</span>
+            <div>
+              <h3>Desenvolvimento</h3>
+              <p>Explorar soluções de layout, iluminação e composição.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <span>04</span>
+            <div>
+              <h3>Apresentação</h3>
+              <p>Reunir as propostas em uma experiência clara e visual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact section-padding" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">05 — CONTATO</span>
+          <h2>Todo grande espaço<br>começa com <em>uma ideia.</em></h2>
+          <p>
+            Explore uma experiência demonstrativa de contato
+            pensada para um estúdio de arquitetura.
+          </p>
+          <span class="contact-note">DEMONSTRAÇÃO CONCEITUAL — SEM ATENDIMENTO REAL</span>
+        </div>
+
+        <div class="contact-panel reveal">
+          <h3>Imagine seu próximo projeto.</h3>
+          <p>
+            Esta interface demonstra como uma solicitação
+            de orçamento poderia funcionar em um site real.
+          </p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="contactName">Seu nome</label>
+              <input type="text" id="contactName" name="name"
+                placeholder="Como podemos chamar você?" autocomplete="off">
+            </div>
+
+            <div class="form-field">
+              <label for="contactType">Tipo de projeto</label>
+              <select id="contactType" name="type">
+                <option value="">Selecione uma opção</option>
+                <option value="residencial">Arquitetura residencial</option>
+                <option value="interiores">Design de interiores</option>
+                <option value="comercial">Espaço comercial</option>
+                <option value="consultoria">Consultoria</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="contactMessage">Conte um pouco sobre sua ideia</label>
+              <textarea id="contactMessage" name="message" rows="3"
+                placeholder="Descreva seu projeto"></textarea>
+            </div>
+
+            <button type="submit" class="button button-dark">Visualizar demonstração</button>
+            <p class="form-disclaimer">
+              Formulário demonstrativo. Nenhuma informação será enviada ou armazenada.
+              Não insira dados pessoais reais.
+            </p>
+            <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#inicio" class="footer-logo">ATELIER<span>.</span></a>
+        <p>Arquitetura é a arte de transformar<br>espaços em experiências.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear">2026</span> ATELIER — PROJETO CONCEITUAL</span>
+        <span>DEMONSTRAÇÃO DE PORTFÓLIO / NÃO REPRESENTA UM ESCRITÓRIO REAL</span>
+        <a href="#inicio">Voltar ao início</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE PROJETOS -->
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <section class="modal-dialog" role="dialog" aria-modal="true"
+      aria-labelledby="modalTitle" tabindex="-1">
+
+      <button class="modal-close" id="modalClose" type="button"
+        aria-label="Fechar projeto">Fechar</button>
+
+      <div class="modal-gallery">
+        <div class="modal-main-image">
+          <img id="modalImage" src="" alt="">
+          <div class="modal-image-count" id="modalCount">01 / 03</div>
+        </div>
+
+        <div class="modal-thumbnails" id="modalThumbnails"
+          aria-label="Selecionar fotografia do projeto"></div>
+      </div>
+
+      <div class="modal-content">
+        <span class="eyebrow" id="modalCategory">PROJETO CONCEITUAL</span>
+        <h2 id="modalTitle">Nome do projeto</h2>
+        <p id="modalDescription"></p>
+
+        <div class="modal-details">
+          <div>
+            <span>TIPOLOGIA</span>
+            <strong id="modalType">Residencial</strong>
+          </div>
+          <div>
+            <span>ANO</span>
+            <strong>2026</strong>
+          </div>
+          <div>
+            <span>STATUS</span>
+            <strong>Conceito demonstrativo</strong>
+          </div>
+        </div>
+
+        <p class="modal-disclaimer">
+          Imagens de referência independentes, utilizadas apenas para
+          demonstrar a apresentação visual do conceito.
+        </p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
