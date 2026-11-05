@@ -297,3 +297,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
   .js-ready .reveal{opacity:1;transform:none}
 }
+
+/* Ajustes de contraste do cabeçalho, preservando a identidade. */
+.header:not(.scrolled){background:linear-gradient(180deg,rgba(0,0,0,.48),rgba(0,0,0,.22))}
+.menu-toggle{color:inherit}
